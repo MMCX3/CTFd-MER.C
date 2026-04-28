@@ -2,9 +2,9 @@
 # Team C / MER/C : Dela Cruz, L.M., Tubera, K.G., & Samaniego, M.Y.
 
 #Week 1 - Flagged for Extraction
-import re
+import re 
 
-#Reads the file , line by line. Use regex to search for patterns that match the format of flags (FLAG{...}). Store the extracted flags in a list for further processing using the loop later.
+#Reads the file , line by line. Use regex to search for patterns that match the format of flags (FLAG{...}). Store the extracted flags in a list for further processing using the loop in the later part of the code. 
 with open('Milestone1/Milestone1-Files/CTF-W1_mystery_text_file.txt', 'r') as f: 
     content = f.read()
     flags = re.findall(r'FLAG\{.*?\}',content)
